@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding:0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner{
+    position: sticky;
+    background-image: url("./assets/IMG_1675.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+    height: 25vh;
+    color: white;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.filters{
+    display: flex;
+}
+
+.categories{ background-color: blanchedalmond;flex-grow: 1;}
+.sort{ background-color: aqua;
+flex-grow: 1;}

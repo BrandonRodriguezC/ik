@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ikaro-2887d",
+  "private_key_id": "fcfa79d5ef7d12af8a13cc5e535d9a8c50b1e37a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5Wmtrivnv7LZQ\nrp9nN25mzSk7py7KgX4Y5shEsCA6F3F9mnxz7IshTADZsuLRkuT0Fbvcfea/+N63\nRdrJ08IsOSgHz1czMH3297d0Ib5ED/WLscbVxlDdq3B3VvGUs3y4oEvl8v1JY0Ew\nkkW6P7KvzlcrL27ZJa5G2D7PFD+aa9TSlC025qgR59AoTRu5Xy8yWVzsbeJ3N7ut\nO9rGzRl2FzWu2kIYcnkIfYc/sNrPtRLXOdj+RL3gfixxaUVOIc/EbuSXoal13w19\nQH3/R6tfVLr4sbRHaRIRPQKP/BuvR+5t/PVqjCEpDJPYXbszD0JVPq3NMlAC0vH3\neMZe4gEFAgMBAAECggEACAw2fMlgd7vZ4J/sWOFtwDXpM+da3z0HGhKvIFhbVdpd\nuZvjCm97TPtNUCZ1ta7AlR56dSTcR3qJRQDZ8ohotl3W8Jveh+Dznyz7QKYUakUd\nHq8d2HtPWIiQjgXu4Et4v1VqZjYKLE0McAzxzRfl7L8zRrM9B12c9wN9mqUg69Xu\n0aUjG4C0v2qqTHWRy06uKkdbGtwq7FtK+NfVBxXLvofzquPfq7reZnZSXg8yldcY\nRAB+gSxh17ER1s2RmLtIxpkaH2v4D4FbbzGHKZ/8LApwAdnqQxIfd+muR1hJKqKA\nhHC2jBGXsEJhfXxx7j8S1p0UCNhg1rz3g23Fe8uO8QKBgQDaKuIsus1tgeVWcWq2\n/SHterK43BdK7CoJsf8yq9dK2q4ZoVasLIEO6KZgc8QRd1rrVRCihiS0HVAbUblR\na1vkI6iLqeJ+Lpbb11O8tkiZKz7iIS5uXS60PhG54qEkBtqFoEdTG96mN3UqLE0j\nBMq0FZj+SAw5TEicDba+eov0rQKBgQDZfs835EBugdkGxVX6UN3N+qESyxWcTylJ\nEW5reap5sbRkzhV2BOe7PpbLt1EWFU+S3/kI+d4ATy0HjcUPEt75t+g+s4e0y3NL\nGqju4mvQY/uSjUwdBsH81nB++D8qrRcppvVJWZiVuNx8FQ/K0JEzGHlooiA5bf/x\nvqNns0zwuQKBgFcC53Xjgu778ZXKYj9dMdzfJMypqviMvC9luFxjQNhv4yQBvumo\nTki97S1mvnog2jglkx7e1WComDxtGbYpVVrmBeC9/sFIn45KkPEg2k+MeeYCSdxm\neawVXUh/5LjTqu/Efu3cna45TBdn19Pxo06zlnNEFOv9SrBCn/HUOmF5AoGBAM6S\n2PH3AxNylNUPfNfhEqpez7nv1bi+nzHdMok156rqE7Ji4pNTmV2I1uTqWkOlPgz8\nWaYi3K5ihRxVlML6Y3m/KQDUt6IKUpkU2zr5Jvmo3PqW5aH0Fy+z5OlTk3tPJ17S\nSsq+JGSgTho0TumNKzvilP3CbuTdC2lqbf1CmWNRAoGAPnpQ9CM7iXJBr2Shcbh8\nABlBNgNu7OEHUKIz9eS0NHOHVUVDtTpfJ6bVxB+JhstSwXelcEhlmwssKvvcipb8\neLj1i4pvNC8IpJyJrMz6pw3K2bIcRu1uNEXXlNE0GxVon4e8rxtUHTXSVawg/yoD\nk3TywqX0nefZPmkMRpOA5ZI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ikaroadmin@ikaro-2887d.iam.gserviceaccount.com",
+  "client_id": "112368119451157263878",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ikaroadmin%40ikaro-2887d.iam.gserviceaccount.com"
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+.parent{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">X</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Accesorios</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Perfumes</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">
+        <i class="fa fa-heart"></i>
+    </div>
+    <div class="w3-center w3-padding-16">ikaro tendencias</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <h1>Bisutería</h1>
+  <div class="w3-row-padding w3-padding-16 w3-center parent" id="galeria" >
+    <% for(var i=0; i< data.productos.length; i++){ %>
+      <div class="w3-quarter">
+      <img src= <%="https://64.media.tumblr.com/"+data.productos[i].F %> alt=<%= data.productos[i].I %> style="width:100%;" >
+      <h3><%= data.productos[i].T %> en <%= data.productos[i].M %></h3>
+      <p><%= data.productos[i].T %> hechas en <%= data.productos[i].M %> con forma de <%= data.productos[i].N %></p>
+      <p>$<%= data.productos[i].V %>.000</p>
+      </div>
+      <% } %>
+  </div>
+  
+    <!--
+    <div class="w3-quarter">
+      <img src="./assets/IMG_1546.jpg" alt="Collar" class="productoImagen">
+      <h3>Collar de hojas</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>$20.000</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./assets/IMG_1539.jpg" alt="Collar" class="productoImagen">
+      <h3>Collar de flores</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>$20.000</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./assets/IMG_1538.jpg" alt="Aretes" class="productoImagen">
+      <h3>Aretes de flores</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>$20.000</p>
+    </div>-->
+    <h1>Perfumes</h1>
+  <!-- Second Photo Grid -->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    
+    <% for(var i=0; i< data.perfumes.length; i++){ %>
+      <div class="w3-quarter">
+      <img src= <%="https://64.media.tumblr.com/"+data.perfumes[i].F %> alt=<%= data.perfumes[i].I %> style="width:100%;" >
+      <h3>Perfume <%= data.perfumes[i].T %>  <%= data.perfumes[i].M %></h3>
+      <p>Fragancia <%= data.perfumes[i].T %> con un aroma <%= data.perfumes[i].M %> ideal para <%= data.perfumes[i].N %></p>
+      <p>$<%= data.perfumes[i].V %>.000</p>
+      </div>
+      <% } %>
+<!--
+    <div class="w3-quarter">
+      <img src="./assets/IMG_0031-1.jpg" alt="Popsicle" class="productoImagen">
+      <h3>Candongas</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>$20.000</p>
+    </div>
+    <div class="w3-quarter">
+      <img  src="./assets/D1484819-EDCB-4639-8070-53DD44552860.jpg" style=" border-radius: 10px;width:100%;" alt="Salmon" class="productoImagen">
+      <h3>Areta</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>$20.000</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./assets/IMG_0146-1.jpg" alt="Sandwich" class="productoImagen">
+      <h3>Aretes</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>$20.000</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./assets/IMG_1532.jpg" alt="Croissant" class="productoImagen">
+      <h3>Aretes golfee</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>$20.000</p>
+    </div>-->
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3><b>ikaro</b></h3><br>
+    <svg class="w3-quarter"  id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221.93 221.5"><path d="M238.57,142.59c0,1.31.16,1.86.4,1.39a5.65,5.65,0,0,0,0-2.32C238.73,140.89,238.57,141.35,238.57,142.59Z" transform="translate(-18.77 -17.25)"/><path d="M237.77,147.62c0,1.08.16,1.47.4,1a3.94,3.94,0,0,0,0-1.93C237.93,146.15,237.77,146.53,237.77,147.62Z" transform="translate(-18.77 -17.25)"/><path d="M235.2,156.89c0,.55.24.78.56.55a.92.92,0,0,0,0-1.09C235.44,156.12,235.2,156.35,235.2,156.89Z" transform="translate(-18.77 -17.25)"/><path d="M236.88,151c-.08.85.17,1.31.41,1a1.52,1.52,0,0,0,.08-1.47C237.13,149.94,236.88,150.17,236.88,151Z" transform="translate(-18.77 -17.25)"/><path d="M236.08,154.11c-.08.85.16,1.32.4,1a1.53,1.53,0,0,0,.08-1.47C236.32,153,236.08,153.26,236.08,154.11Z" transform="translate(-18.77 -17.25)"/><path d="M191.84,46.79c0-.23-.4-.62-1-.93s-.64-.23-.32.31C191.12,47.1,191.84,47.41,191.84,46.79Z" transform="translate(-18.77 -17.25)"/><path d="M148.25,232.83c42.55-8.82,73.78-37,84.14-75.94,2.65-10,4-24.82,3.05-33.24l-.8-6.58-.08,10.83c-.08,12.37-1.53,22-5.14,32.78a114,114,0,0,1-15.26,29.08c-8.75,11.36-25.13,24.82-37.49,30.93-11.16,5.41-24.41,8.5-40.55,9.43-6.74.39-9,.7-7.3,1.08,1.36.31-1,.39-5.22.16s-8.35-.7-9.24-1.09.89-.46,4.42-.3c5.54.3,5.7.23,1.77-.31a31.06,31.06,0,0,1-4.66-1c-.16-.23,1.2-1.47,3.13-2.78,15-10.6,32-32.09,44.56-56.22,5.54-10.74,20.39-48,26.58-66.88,5.78-17.63,8.83-30,11.24-44.46l1.36-8.51,6.59,6.34a101.65,101.65,0,0,1,30.1,64.41l.33,3.48.08-3.86c.24-6-2-17.79-5.14-26.68A102.62,102.62,0,0,0,209,53.59l-6.74-6.65V41c0-12.37-4.82-20.57-13.57-23-7.06-1.94-18.87.23-29.79,5.56-3.53,1.7-4.41,1.86-7.38,1.16-6.75-1.62-23.77-1.85-33.16-.46-13,1.85-29.31,6.57-39.58,11.6-30.67,14.84-51,40.67-58.45,73.92-2.09,9.2-2.09,30.31-.08,39.36,4.81,21.65,13.73,38,28.9,53.12L57,210v4.71c0,11.29,6.9,20.26,17.66,23,5,1.32,13.73,1.32,19.19-.07,2.49-.62,6.58-1.94,9.23-2.94,4-1.62,5.22-1.78,8.43-1.16,2,.46,9.32.77,16.14.85C137.57,234.45,141.66,234.14,148.25,232.83Zm32-210.17a12.66,12.66,0,0,1,11.48,4c2.81,3,5.14,9.82,4.74,13.84l-.24,2.71-2.41-1.86C190.4,38.75,177.07,32,171.37,30a35,35,0,0,1-5.46-2.24C165.11,27.07,175.71,23.36,180.28,22.66Zm-39,2.86c4.34-.07,11.24.85,11.24,1.55,0,.85-2.33.77-8.83-.46C139.66,25.83,139.09,25.6,141.26,25.52Zm-10.2-.62a18,18,0,0,1,4,0c1,.16,0,.31-2.25.31S129.78,25.06,131.06,24.9ZM58.4,204.14c-.24,1.47-1,.85-6.42-4.64A104.19,104.19,0,0,1,29.34,164c-7.15-19.1-7.63-44.69-1.29-63.17,1.61-4.72,1.53-4.1-.48,5a93.94,93.94,0,0,0-2,30c2.32,24,12.2,45.47,28.42,61.78C57.36,201.05,58.64,202.9,58.4,204.14Zm26.66,30.54a27.36,27.36,0,0,1-9.07-.93c-4.66-1.39-9.56-5.95-10.84-10.2-1.05-3.17-1.29-7.89-.48-7.89a24.1,24.1,0,0,1,3.77,2.24c5.14,3.4,17.34,9,23.52,11a33.66,33.66,0,0,1,6.27,2.32C99.27,232.13,90.92,234.3,85.06,234.68Zm19.51-6a37.08,37.08,0,0,1-6.26-1.39,104.1,104.1,0,0,1-27.86-12.68c-4-2.48-6.27-4.49-6.27-5.34s.16-1.39.33-1.39a63.11,63.11,0,0,1,6.26,4.1c9.39,6.41,24.73,13.53,32.51,14.92C106,227.41,107,228.88,104.57,228.73Zm5.38-2.79c-2.49,1.71-2.33,1.71-10.6-1A129.45,129.45,0,0,1,70.77,211c-6.51-4.41-6.43-3.94-2.89-11.52,9.23-19.87,29.86-31.32,54.11-29.92,4.66.23,10.2.69,12.37.92,5.7.78,4.57-1.16-1.93-3.32-11.48-3.71-27.54-2.78-39.82,2.32S68.28,185.2,62,196.72l-2.89,5.33-4.74-5C37.29,178.93,28,157,26.69,131.76a103.52,103.52,0,0,1,4.25-33.48C33.67,89,41.38,74.39,47.89,66,62.1,48,85.7,34.42,111.31,29.62c7.63-1.47,27.38-1.78,33.89-.54l3.53.62L144,33.18c-22.32,16.16-48.33,52.19-58.13,80.26-6,17.32-6,29,.08,38,3,4.64,7.31,8,9.56,7.5,2.41-.38,1.6-2.63-1.93-5a17.86,17.86,0,0,1-5.78-6.73c-1.93-3.87-2.09-4.87-1.77-11.06.48-8.27,3.46-17.32,10.36-31.08,7.23-14.46,18.47-32.32,26.25-41.76,7-8.42,24.57-24.51,32.92-30.07l2.57-1.78,5.38,1.7a105.58,105.58,0,0,1,19.67,8.5c2.17,1.32,3.78,2,3.45,1.63-1-1.55-11.64-7.27-19.1-10.21-5.54-2.16-7-3-5.87-3.48,3-1.08,18.87,5.26,28.67,11.45l6.34,4V51c0,16.09-8.27,44.85-23.52,82C153.3,181.17,133.15,210.87,110,225.94Z" transform="translate(-18.77 -17.25)"/><path d="M189.43,45.24c0-.23-.4-.62-1-.93s-.64-.23-.32.31C188.71,45.55,189.43,45.86,189.43,45.24Z" transform="translate(-18.77 -17.25)"/><path d="M239.45,135.63c0,2.55.16,3.71.33,2.55a22.45,22.45,0,0,0,0-4.64C239.61,132.15,239.45,133.08,239.45,135.63Z" transform="translate(-18.77 -17.25)"/><path d="M232.79,163.85c0,.55.24.78.56.55a.92.92,0,0,0,0-1.09C233,163.08,232.79,163.31,232.79,163.85Z" transform="translate(-18.77 -17.25)"/><path d="M233.59,161.53c0,.55.24.78.57.55a.92.92,0,0,0,0-1.09C233.83,160.76,233.59,161,233.59,161.53Z" transform="translate(-18.77 -17.25)"/><path d="M231.18,167.72c0,.54.25.77.57.54a.9.9,0,0,0,0-1.08C231.43,167,231.18,167.18,231.18,167.72Z" transform="translate(-18.77 -17.25)"/><path d="M240.18,127.51c0,1.08.16,1.47.4,1a4,4,0,0,0,0-1.94C240.34,126,240.18,126.43,240.18,127.51Z" transform="translate(-18.77 -17.25)"/><path d="M234.4,159.21c0,.55.24.78.56.55a.92.92,0,0,0,0-1.09C234.64,158.44,234.4,158.67,234.4,159.21Z" transform="translate(-18.77 -17.25)"/><path d="M232.87,110c-.08.85.16,1.31.4,1a1.52,1.52,0,0,0,.08-1.47C233.11,109,232.87,109.19,232.87,110Z" transform="translate(-18.77 -17.25)"/><path d="M233.75,114.75c0,1.32.16,1.86.41,1.4a5.66,5.66,0,0,0,0-2.32C233.91,113.05,233.75,113.52,233.75,114.75Z" transform="translate(-18.77 -17.25)"/><path d="M232,106.63c0,.55.24.78.56.55a.92.92,0,0,0,0-1.09C232.23,105.86,232,106.09,232,106.63Z" transform="translate(-18.77 -17.25)"/></svg>
+    <div class="w3-padding-32">
+      <h4></h4>
+      <h6><i>Una empresa colombiana que marca tendencias!</i></h6>
+      <p >Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>  
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+    
+ 
